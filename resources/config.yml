@@ -1,4 +1,4 @@
-...
+---
 # VARIABLES
 # {X} : Player's X coordinate
 # {Y} : Player's Y coordinate
@@ -18,4 +18,4 @@ Messages:
   - "§l§eX-Hud"
   - "§l§dX-Hud"
   
----
+...
