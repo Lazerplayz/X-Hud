@@ -19,6 +19,7 @@ Class Main extends PluginBase implements Listener{
         $this->getServer()->getScheduler()->scheduleRepeatingTask(new Task($this), 20);
         $this->money = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
         $this->factions = $this->getServer()->getPluginManager()->getPlugin("FactionsPro");
+        $this->count = count($this->config->get("Messages"));
     }
     
     public function getMessage($current, Player $player){
