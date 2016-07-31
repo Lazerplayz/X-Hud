@@ -27,14 +27,16 @@ public function onRun($currentTick)
         if($this->plugin->isHudOn($p) == true){
         $message = $this->plugin->getMessage($this->count, $p);
         $p->sendTip($message);
-        $this->count++;
        }
     }
     }
        
-       if($this->count >= $this->plugin->count){
-           $this->count = 0;
-       }
+                                if($this->count < $this->plugin->count){
+					$this->count++;
+                                }
+                                if($this->count == $this->plugin->count){
+					$this->count-=$this->plugin->count;
+                                }
         }
 
 }
