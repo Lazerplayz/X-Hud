@@ -76,7 +76,7 @@ Class Main extends PluginBase implements Listener{
             $this->hudOff->save();
             $this->hudOff->reload();
         }else{
-            $this->hudOff->unset($player->getName());
+            $this->hudOff->remove($player->getName());
             $player->sendMessage(C::AQUA."Enabled HUD!");
             $this->hudOff->save();
             $this->hudOff->reload();
