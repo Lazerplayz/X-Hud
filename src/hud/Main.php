@@ -26,7 +26,7 @@ Class Main extends PluginBase implements Listener{
         $this->getServer()->getScheduler()->scheduleRepeatingTask(new Task($this), 20);
         $this->money = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
         $this->factions = $this->getServer()->getPluginManager()->getPlugin("FactionsPro");
-        $this->count = count($this->config->get("Messages"));
+        $this->count = count($this->getConfig->get("Messages"));
         $this->hudOff = new Config($this->getDataFolder() . "hudOff.yml", Config::YAML);
     }
     
@@ -37,7 +37,7 @@ Class Main extends PluginBase implements Listener{
         }
         
     public function getMessage($current, Player $player){
-        $messages = $this->config->get("Messages");
+        $messages = $this->getConfig->get("Messages");
         return $this->formatMessage($messages[$current], $player);
     }
     public function formatMessage($message, Player $player){
