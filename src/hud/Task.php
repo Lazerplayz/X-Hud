@@ -23,10 +23,12 @@ Class Task extends PluginTask{
 public function onRun($currentTick)
 {
     foreach ($this->getOwner()->getServer()->getOnlinePlayers() as $p){
+        if($this->plugin->isHudOn($p) == true){
         $message = $this->plugin->getMessage($this->count, $p);
         $p->sendTip($message);
         $this->count++;
        }
+    }
        
        if($this->count >= $this->plugin->count){
            $this->count-=$this->plugin->count;
