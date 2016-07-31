@@ -21,7 +21,7 @@ Class Main extends PluginBase implements Listener{
     public function onEnable()
     {
         @mkdir($this->getDataFolder());
-        $this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
+        $this->saveDefaultConfig();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->getServer()->getScheduler()->scheduleRepeatingTask(new Task($this), 20);
         $this->money = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
