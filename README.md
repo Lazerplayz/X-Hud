@@ -1,11 +1,19 @@
 # X-Hud
-###A fully customizable HUD plugin
-###Variables
-###{NAME} shows Players name
-###{MONEY} shows Players EconomyS money
-###{X} shows players x coords
-###{Y} shows players y coords
-###{Z} shows players z coords
-###{WORLD} shows world name
-###{NEXTLINE} switches to the line under
-###Authors: Pogogo007 and ItzBulkDev
+The highly customizable HUD Plugin
+
+By Pogogo007 and Bulk
+
+# VARIABLES
+* {X} : Player's X coordinate
+* {Y} : Player's Y coordinate
+* {Z} : Player's Z coordinate
+* {NAME} : Player's Name
+* {WORLD} : The Name of the world the player is in
+* {N} : Next Line/Break Line
+* {PLAYERS} : Number of players online
+* {MONEY} : Player's money. (Must have EconomyAPI)
+* {FACNAME} : Player's Faction Name
+* {FACPOWER} : Player's Faction Power
+
+#COMMANDS
+* /hud : Enables/Disbales hud.
