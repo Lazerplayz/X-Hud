@@ -4,3 +4,6 @@ version: Infinite
 api: 1.0.0 - 2.0.0
 main: hud\Main
 description: A custom hud plugin
+commands:
+  hud:
+    description: Toogle Hud
