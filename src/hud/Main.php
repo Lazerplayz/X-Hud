@@ -54,8 +54,8 @@ Class Main extends PluginBase implements Listener{
             $message = str_replace("{MONEY}", $this->money->myMoney($player), $message);
         }
         if($this->factions != null){
-            $message = str_replace("{FACNAME}", $this->factions->getPlayerFaction($player), $message);
-            $message = str_replace("{FACPOWER}", $this->factions->getFactionPower($this->factions->getPlayerFaction($player)), $message);
+            $message = str_replace("{FACNAME}", $this->factions->getPlayerFaction($player->getName()), $message);
+            $message = str_replace("{FACPOWER}", $this->factions->getFactionPower($this->factions->getPlayerFaction($player->getName())), $message);
         }
         return $message;
         
