@@ -8,3 +8,4 @@
 ###{Z} shows players z coords
 ###{WORLD} shows world name
 ###{NEXTLINE} switches to the line under
+###Authors: Pogogo007 and ItzBulkDev
