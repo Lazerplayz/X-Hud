@@ -27,7 +27,7 @@ Class Main extends PluginBase implements Listener{
         $this->money = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
         $this->factions = $this->getServer()->getPluginManager()->getPlugin("FactionsPro");
         $this->count = count($this->getConfig()->get("Messages"));
-        $this->hudOff = new Config($this->getDataFolder() . "hudOff.yml", Config::YAML);
+        $this->hudOff = new Config($this->getDataFolder()."hudOff.yml", Config::YAML);
     }
     
         public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
