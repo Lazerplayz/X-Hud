@@ -36,7 +36,7 @@ Class Main extends PluginBase implements Listener{
         }
         
     public function getMessage($current, Player $player){
-        $messages = $this->config()->get("Messages");
+        $messages = $this->config->get("Messages");
         return $this->formatMessage($message[$current], $player);
     }
     public function formatMessage($message, Player $player){
