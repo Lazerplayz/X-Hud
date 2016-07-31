@@ -37,12 +37,8 @@ Class Main extends PluginBase implements Listener{
         }
         
     public function getMessage($current, Player $player){
-        if($current =< $this->count){
         $messages = $this->getConfig()->get("Messages");
         return $this->formatMessage($messages[$current], $player);
-        }else{
-           return $this->formatMessage($messages[0], $player); 
-        }
     }
     public function formatMessage($message, Player $player){
         $message = str_replace("{X}", round($player->getX()), $message);
