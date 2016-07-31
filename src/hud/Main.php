@@ -8,9 +8,15 @@ use pocketmine\utils\Config;
 use pocketmine\event\Listener;
 use pocketmine\scheduler\PluginTask;
 use pocketmine\Player;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 
 Class Main extends PluginBase implements Listener{
-
+    
+    public $money;
+    public $factions;
+    public $count;
+    
     public function onEnable()
     {
         @mkdir($this->getDataFolder());
@@ -20,8 +26,15 @@ Class Main extends PluginBase implements Listener{
         $this->money = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
         $this->factions = $this->getServer()->getPluginManager()->getPlugin("FactionsPro");
         $this->count = count($this->config->get("Messages"));
+        $this->hudOff = new Config($this->getDataFolder() . "hudOff.yml", Config::YAML);
     }
     
+        public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
+        if ($cmd->getName() === "hud"){
+            $this->toggleHud($sender);
+        }
+        }
+        
     public function getMessage($current, Player $player){
         $messages = $this->config()->get("Messages");
         return $this->formatMessage($message[$current], $player);
@@ -45,6 +58,24 @@ Class Main extends PluginBase implements Listener{
         }
         return $message;
         
+    }
+    
+    public function isHudOn(Player $player){
+        if($this->hudOff->exists($player->getName())){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    
+    public function toggleHud(Player $player){
+        if($this->isHudOn($player) == true){
+            $this->hudOff->set($player->getName(), "1");
+            $player->sendMessage(C::AQUA."Disabled HUD!");
+        }else{
+            $this->hudOff->unset($player->getName());
+            $player->sendMessage(C::AQUA."Enabled HUD!");
+        }
     }
 
 
