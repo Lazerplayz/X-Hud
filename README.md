@@ -12,8 +12,8 @@ By Pogogo007 and Bulk
 * {N} : Next Line/Break Line
 * {PLAYERS} : Number of players online
 * {MONEY} : Player's money. (Must have EconomyAPI)
-* {FACNAME} : Player's Faction Name
-* {FACPOWER} : Player's Faction Power
+* {FACNAME} : Player's Faction Name (Must Have FactionsPro)
+* {FACPOWER} : Player's Faction Power (Must Have FactionsPro)
 * {MAXPLAYERS} : Shows max number of players the server can have
 * {HEALTH} : Shows Player's current health
 * {MAXHEALTH} : Shows Player's max health
