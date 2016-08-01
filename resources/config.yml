@@ -10,6 +10,7 @@
 # {MONEY} : Player's money. (Must have EconomyAPI)
 # {FACNAME} : Player's Faction Name
 # {FACPOWER} : Player's Faction Power
+# {MAXPLAYERS} : Shows server max number of players
 
 Messages:
   - "§l§bX-Hud"
