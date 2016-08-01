@@ -15,6 +15,8 @@ By Pogogo007 and Bulk
 * {FACNAME} : Player's Faction Name
 * {FACPOWER} : Player's Faction Power
 * {MAXPLAYERS} : Shows max number of players the server can have
+* {HEALTH} : Shows Player's current health
+* {MAXHEALTH} : Shows Player's max health
 
 #COMMANDS
 * /hud : Enables/Disbales hud.
