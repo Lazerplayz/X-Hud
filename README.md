@@ -14,6 +14,7 @@ By Pogogo007 and Bulk
 * {MONEY} : Player's money. (Must have EconomyAPI)
 * {FACNAME} : Player's Faction Name
 * {FACPOWER} : Player's Faction Power
+* {MAXPLAYERS} : Shows max number of players the server can have
 
 #COMMANDS
 * /hud : Enables/Disbales hud.
