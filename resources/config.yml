@@ -11,6 +11,8 @@
 # {FACNAME} : Player's Faction Name
 # {FACPOWER} : Player's Faction Power
 # {MAXPLAYERS} : Shows server max number of players
+# {HEALTH} : Shows Player's current health
+# {MAXHEALTH} : Shows Player's max health
 
 Messages:
   - "§l§bX-Hud"
