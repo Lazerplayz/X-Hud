@@ -50,7 +50,7 @@ Class Main extends PluginBase implements Listener{
         $message = str_replace("{N}", "\n", $message);
         $message = str_replace("{LINE}", "\n", $message);
         $message = str_replace("{PLAYERS}", count($this->getServer()->getOnlinePlayers()), $message);
-        $message = str_replace("{MAXPLAYERS}",count($this->getServer()->getMaxPlayers()), $message);
+        $message = str_replace("{MAXPLAYERS}",$this->getServer()->getMaxPlayers(), $message);
         if($this->money != null){
             $message = str_replace("{MONEY}", $this->money->myMoney($player), $message);
         }
