@@ -17,3 +17,7 @@ By Pogogo007 and Bulk
 
 #COMMANDS
 * /hud : Enables/Disbales hud.
+
+#AUTHORS
+* Pogogo007
+* Bulk/ItzBulkDev
