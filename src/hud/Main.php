@@ -94,12 +94,12 @@ class Main extends PluginBase implements Listener{
     public function toggleHud(Player $player){
         if($this->isHudOn($player) == true){
             $this->hudOff->set($player->getName(), "1");
-            $player->sendMessage(C::AQUA."Disabled HUD!");
+            $player->sendMessage(TextFormat::AQUA."Disabled HUD!");
             $this->hudOff->save();
             $this->hudOff->reload();
         }else{
             $this->hudOff->remove($player->getName());
-            $player->sendMessage(C::AQUA."Enabled HUD!");
+            $player->sendMessage(TextFormat::AQUA."Enabled HUD!");
             $this->hudOff->save();
             $this->hudOff->reload();
         }
